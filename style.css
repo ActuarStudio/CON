@@ -2685,3 +2685,7 @@ header>.toolbar { /* Hide toolbar menu */
     box-shadow: 10 10 60px 10px rgba(0, 0, 0, 0.9);
 
 }
+
+footer {display: none !important;}
+/* footer {visibility: hidden;} */
+
