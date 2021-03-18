@@ -3,7 +3,6 @@ from st_aggrid import AgGrid
 import pandas as pd
 import interface_util as iu
 
-
 iu.set_conf()
 iu.localCSS("static/bulma.css")
 iu.localCSS("static/st.css")
