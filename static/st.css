@@ -1,0 +1,29 @@
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+.navbar {
+	background-color: rgb(240, 242, 246) !important;
+}
+
+.navbar-item:hover {
+  background-color: white !important;
+  color: hsl(348, 86%, 43%) !important;
+}
+
+.main {
+	flex-basis :100vw;
+}
+
+
+footer {display: none !important;}
+
+
+

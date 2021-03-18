@@ -1,0 +1,143 @@
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-family: 'Neo Sans Pro'
+}
+
+.Site-content {
+  flex: 1;
+}
+
+footer {
+	font-family: 'Neo Sans Pro'
+}
+
+.navbar-item:hover {
+  background-color: white !important;
+  color: hsl(348, 86%, 43%) !important;
+}
+
+.main {
+	flex-basis :100vw;
+}
+
+#main-hero {
+	background: linear-gradient(135deg,white,hsl(0, 0%, 71%));
+}
+
+/*
+background-color: rgb(240, 242, 246);
+#main-hero {
+	background: linear-gradient( 135deg,white,grey, transparent)
+
+	background-image: url('white.jpg');
+	background-position:center;
+    background-repeat:no-repeat;
+	background-size:cover;
+	background-color: linear-gradient( cyan, transparent)
+    background-blend-mode: multiply;
+}
+.hero {
+	height: 100vh;
+	background: linear-gradient( cyan, transparent), linear-gradient( -45deg, magenta, transparent), linear-gradient( 45deg, yellow, transparent)
+	background-blend-mode: multiply;
+}
+.Site-content {
+	height: 100vh;
+	background-color: linear-gradient( cyan, transparent)
+}
+.hero-body {
+    background-image:  linear-gradient(104.07deg, #E3F1FD 0.41%, #C0DFE2 100%);
+}
+*/
+@font-face {
+	font-family: 'Neo Sans Pro';
+	src: url('NeoSansPro/NeoSansPro-Bold.eot');
+	src: local('Neo Sans Pro Bold'), local('NeoSansPro-Bold'),
+		url('NeoSansPro/NeoSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('NeoSansPro/NeoSansPro-Bold.woff') format('woff'),
+		url('NeoSansPro/NeoSansPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Neo Sans Pro';
+	src: url('NeoSansPro/NeoSansPro-Medium.eot');
+	src: local('Neo Sans Pro Medium'), local('NeoSansPro-Medium'),
+		url('NeoSansPro/NeoSansPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('NeoSansPro/NeoSansPro-Medium.woff') format('woff'),
+		url('NeoSansPro/NeoSansPro-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Neo Sans Pro';
+	src: url('NeoSansPro/NeoSansPro-LightItalic.eot');
+	src: local('Neo Sans Pro Light Italic'), local('NeoSansPro-LightItalic'),
+		url('NeoSansPro/NeoSansPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('NeoSansPro/NeoSansPro-LightItalic.woff') format('woff'),
+		url('NeoSansPro/NeoSansPro-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Neo Sans Pro';
+	src: url('NeoSansPro/NeoSansPro-Regular.eot');
+	src: local('Neo Sans Pro'), local('NeoSansPro-Regular'),
+		url('NeoSansPro/NeoSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('NeoSansPro/NeoSansPro-Regular.woff') format('woff'),
+		url('NeoSansPro/NeoSansPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Neo Sans Pro Ultra';
+	src: url('NeoSansPro/NeoSansPro-Ultra.eot');
+	src: local('Neo Sans Pro Ultra'), local('NeoSansPro-Ultra'),
+		url('NeoSansPro/NeoSansPro-Ultra.eot?#iefix') format('embedded-opentype'),
+		url('NeoSansPro/NeoSansPro-Ultra.woff') format('woff'),
+		url('NeoSansPro/NeoSansPro-Ultra.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Neo Sans Pro';
+	src: url('NeoSansPro/NeoSansPro-BoldItalic.eot');
+	src: local('Neo Sans Pro Bold Italic'), local('NeoSansPro-BoldItalic'),
+		url('NeoSansPro/NeoSansPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('NeoSansPro/NeoSansPro-BoldItalic.woff') format('woff'),
+		url('NeoSansPro/NeoSansPro-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Neo Sans Pro';
+	src: url('NeoSansPro/NeoSansPro-Light.eot');
+	src: local('Neo Sans Pro Light'), local('NeoSansPro-Light'),
+		url('NeoSansPro/NeoSansPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('NeoSansPro/NeoSansPro-Light.woff') format('woff'),
+		url('NeoSansPro/NeoSansPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Neo Sans Pro';
+	src: url('NeoSansPro/NeoSansPro-Italic.eot');
+	src: local('Neo Sans Pro Italic'), local('NeoSansPro-Italic'),
+		url('NeoSansPro/NeoSansPro-Italic.eot?#iefix') format('embedded-opentype'),
+		url('NeoSansPro/NeoSansPro-Italic.woff') format('woff'),
+		url('NeoSansPro/NeoSansPro-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+
