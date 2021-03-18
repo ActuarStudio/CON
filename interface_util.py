@@ -4,7 +4,6 @@ import os
 import base64
 from pathlib import Path
 from io import BytesIO
-
 #from st_aggrid import AgGrid
 
 #################################
@@ -15,7 +14,7 @@ def load_image(path):
 def set_conf():
 
     page_title ="ActuarOnline"
-    page_icon  =load_image("LOGO.png")
+    page_icon  =load_image("static/LOGO.png")
 
     st.set_page_config(
         page_title=page_title,
@@ -29,55 +28,117 @@ def localCSS(file_name):
 
 def set_HeroSection():
 
-    header1 = 'Actuar'
-    header2 = 'Online'
-    title1  = 'Actuar'
-    title2  = 'Studio'
-    subtitle= "Актуарний Online сервіс від Actuar.studio"
-    logo = load_image("LOGO.png")
+    image = load_image("static/lat.png")
 
     st.write(
-        f"""
-        <div class="base-wrapper hero-bg">
-            <div class="hero-wrapper">
-                <div class="hero-container">
-                    <a class="logo-link"><span class="logo-bold">{header1}</span><span class="logo-lighter">{header2}</span></a>
-                    <div class="hero-container-content">
-                        <span class="hero-container-product primary-span">{title1}<br/>{title2}</span>
-                        <span class="hero-container-subtitle primary-span">{subtitle}</span>
+    f"""    
+    <div class="hero has-bg-img" width='100vw'>
+        <div class="hero-head">
+        <nav class="navbar  is-fixed-top">
+            <div class="container">
+                <!-- Brand -->
+                <div class="navbar-brand">
+                    <div class="navbar-item" href="/">                        
+                        <div class="has-text-danger is-size-3 has-text-weight-medium">
+                         Actuar
+                        </div>
+                    </div>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <!-- Navbar menu -->
+                <div class="navbar-menu ">
+                    <!-- Navbar Start -->
+                    <div class="navbar-start">
+                    </div>
+                    <div class="navbar-end has-text-grey is-size-4 has-text-weight-light">
+                        <!-- Navbar item -->
+                        <div class="navbar-item" is-size-4 has-text-grey-dark href=".html">
+                            Інформація
+                        </div>
+                        <!-- Navbar item -->
+                        <div class="navbar-item" is-size-4 has-text-grey-dark href=".html">
+                            Проект
+                        </div>
+                        <!-- Navbar item -->
+                        <div class="navbar-item" is-size-4 has-text-grey-dark href=".html">
+                            Реєстрація
+                        </div>
                     </div>
                 </div>
-                <div class="hero-container-image">   
-                    <img style="width: 100%;" src="data:image/png;base64,{logo}"/>
-                </div>
-            </div><br>
+            </div>
+        </nav>
         </div>
-        """,
+        <!-- Hero image -->
+        <div id="main-hero" class="hero-body" width='100vw'>
+            <div class="container">
+                <div class="columns is-vcentered mt-3">
+                    <div class="column is-6 signup-column has-text-left">
+                        <h1 class="title has-text-weight-normal is-size-1 has-text-danger">
+                           ActuarOnline
+                        </h1>
+                        <h2 class="subtitle has-text-weight-light is-size-3 has-text-grey-dark">
+                            <br>
+                            Актуарний Online сервіс від ActuarStudio
+                        </h2>
+                        <br>
+                    </div>
+                    <div class="column is-4 is-offset-2">
+                        <!-- Hero mockup -->
+                        <figure class="image is-hidden-mobile">
+                            <img src="data:image/png;base64,{image}" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="is-divider is-danger" ></div>
+        <div class="hero-body has-shadow has-border">
+            <div class="container">
+                <div class="columns is-vcentered ">
+                    <div class="column is-6 signup-column has-text-left">
+                        <div class="has-text-weight-light is-size-1 has-text-grey-dark">
+                            <h2 class="has-text-weight-light is-size-4 has-text-grey-dark">Перевір корректність НБУ XML</h2>
+                            <h2 class="has-text-weight-light is-size-4 has-text-grey-dark">Ознайомся з вмістом</h2>
+                            <h2 class="has-text-weight-light is-size-4 has-text-grey-dark">Конвертуй у XLSX формат</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="is-divider is-danger " ></div>
+    </div>
+    """,
         unsafe_allow_html=True,
     )
 
-    st.write(f"""<div>
-            <div class="base-wrapper flex flex-column" style="background-color:#0090A7">
-            <div class="white-span header p1" style="font-size:30px;">Перевір корректність НБУ XML</div>
-            <div class="white-span header p1" style="font-size:30px;">Ознайомся з вмістом</div>
-            <div class="white-span header p1" style="font-size:30px;">Конвертуй у XLSX формат</div>
-            </div>""",
-         unsafe_allow_html=True,
-    )
-
-    st.write("""
-            <div class="base-wrapper primary-span">
-                <span class="section-header">Конвертор НБУ XML файлів</span>
-            </div>""",
-        unsafe_allow_html=True,
-    )
+#    st.write("""
+#            <div class="base-wrapper primary-span">
+#                <span class="section-header">Конвертор НБУ XML файлів</span>
+#           </div>""",
+#        unsafe_allow_html=True,
+#    )
 
 def set_footer():
 
-    st.write(f"""
-            <div class="base-wrapper flex flex-column" style="background-color:#0090A7">
-                <div class="white-span header p1" style="font-size:30px;">Actuar.Studio 2021</div>
-            </div>""",
+    st.write(
+        f"""
+    <!-- Footer -->    
+    <div class="is-divider is-danger" ></div>
+    <div class="myfooter">
+        <div class="container">
+        <div class="is-size-4 has-text-grey-dark has-text-weight-light">
+            <p class="is-size-4 has-text-grey-dark has-text-weight-light">
+                ActuarOnline 2021
+            </p>
+        </div>
+        </div>
+    </div>
+    <!-- /Footer -->           
+        """,
         unsafe_allow_html=True,
     )
 
@@ -102,14 +163,54 @@ def get_table_download_link(df):
     return f'''
     <a href="data:application/octet-stream;base64,{b64.decode()}" download="extract.xlsx">
      <div class="row-widget stButton">
-     <button kind="primary" class="css-2trqyj edgvbvh1" type="button">Download</button> 
+     <button kind="primary" class="css-2trqyj edgvbvh1" type="button" >Download</button> 
      </div>
     </a>'''
 
 def frame_download(df):
     st.markdown(get_table_download_link(df), unsafe_allow_html=True)
 
+def hide_main_menu ():
+    hide_streamlit_style = '''
+    <style>
+    #MainMenu {visibility: hidden;}
+    </style>
+    '''
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 #################################
 
+def new_index():
+
+        import pathlib
+        from bs4 import BeautifulSoup
+
+        index_path = pathlib.Path(st.__file__).parent / "static" / "index.html"
+        soup = BeautifulSoup(index_path.read_text(), features="lxml")
+
+        f = open('text.txt', 'w')
+        #f.write(soup.get_text())
+        f.write(str(index_path))
+
+        '''
+        if not soup.find(id="google-analytics-loader"):
+            script_tag_import = soup.new_tag(
+                "script",
+                src="https://www.googletagmanager.com/gtag/js?id=%s"
+                % GOOGLE_ANALYTICS_CODE,
+            )
+            soup.head.append(script_tag_import)
+            script_tag_loader = soup.new_tag("script", id="google-analytics-loader")
+            script_tag_loader.string = GA_JS
+            soup.head.append(script_tag_loader)
+            script_tag_managerhead = soup.new_tag("script", id="google-tagmanagerhead")
+            script_tag_managerhead.string = TAG_MANAGER
+            soup.head.append(script_tag_managerhead)
+            script_tag_manager_body = soup.new_tag(
+                "script",
+                src="https://www.googletagmanager.com/gtm.js?id=GTM-MKWTV7X"
+            )
+            soup.head.append(script_tag_manager_body)
+            index_path.write_text(str(soup))
+        '''

@@ -4,3 +4,7 @@ venv/
 .idea/
 
 HELP/
+
+html_py/
+
+__pycache__/
