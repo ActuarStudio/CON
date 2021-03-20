@@ -19,7 +19,7 @@ def set_conf():
 
     st.set_page_config(
         page_title=page_title,
-        page_icon="static/4_1-52.png",
+        page_icon='static/logo4_1-52.png',
         layout="wide",                   #'centered'
         initial_sidebar_state='collapsed')
 
