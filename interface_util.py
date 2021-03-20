@@ -19,8 +19,8 @@ def set_conf():
 
     st.set_page_config(
         page_title=page_title,
-        page_icon="static/LOGO.png", #page_icon,
-        layout="wide",   #'centered'
+        page_icon="static/4_1-52.png",
+        layout="wide",                   #'centered'
         initial_sidebar_state='collapsed')
 
 def localCSS(file_name):
@@ -30,6 +30,7 @@ def localCSS(file_name):
 def set_HeroSection():
 
     image = load_image("static/lat.png")
+    logo = load_image("static/logo4_1-46.png")
 
     st.write(
     f"""    
@@ -40,9 +41,8 @@ def set_HeroSection():
                 <!-- Brand -->
                 <div class="navbar-brand">
                     <div class="navbar-item" href="/">                        
-                        <div class="has-text-danger is-size-3 has-text-weight-medium">
-                         Actuar
-                        </div>
+                        <!--<img class="switcher-logo" src="data:image/png;base64,{logo}" height="100%" alt="">-->
+                        <div class="has-text-danger is-size-3 has-text-weight-medium">Actuar</div>
                     </div>
                     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
                         <span aria-hidden="true"></span>
