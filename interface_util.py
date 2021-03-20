@@ -19,7 +19,7 @@ def set_conf():
 
     st.set_page_config(
         page_title=page_title,
-        page_icon=page_icon,
+        page_icon="static/LOGO.png", #page_icon,
         layout="wide",   #'centered'
         initial_sidebar_state='collapsed')
 
@@ -78,8 +78,8 @@ def set_HeroSection():
             <div class="container">
                 <div class="columns is-vcentered mt-3">
                     <div class="column is-6 signup-column has-text-left">
-                        <h1 class="title has-text-weight-normal is-size-1 has-text-danger">
-                           ActuarOnline
+                        <h1 class="title has-text-weight-light  has-text-danger">
+                           Actuar Online
                         </h1>
                         <h2 class="subtitle has-text-weight-light is-size-3 has-text-grey-dark">
                             <br>
