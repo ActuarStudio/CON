@@ -29,7 +29,7 @@ def localCSS(file_name):
 
 def set_HeroSection():
 
-    image = load_image("static/lat.png")
+    image = load_image("static/colorful-paint-splashes_1035-7496.jpg")
     logo = load_image("static/logo4_1-46.png")
 
     st.write(
@@ -42,7 +42,7 @@ def set_HeroSection():
                 <div class="navbar-brand">
                     <div class="navbar-item" href="/">                        
                         <!--<img class="switcher-logo" src="data:image/png;base64,{logo}" height="100%" alt="">-->
-                        <div class="has-text-danger is-size-3 has-text-weight-medium">Actuar</div>
+                        <div class="is-size-3 has-text-weight-medium" style="color:#FF0000">Actuar</div>
                     </div>
                     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
                         <span aria-hidden="true"></span>
@@ -78,7 +78,7 @@ def set_HeroSection():
             <div class="container">
                 <div class="columns is-vcentered mt-3">
                     <div class="column is-6 signup-column has-text-left">
-                        <h1 class="title has-text-weight-light  has-text-danger">
+                        <h1 class="title has-text-weight-light " style="color:#FF0000">
                            Actuar Online
                         </h1>
                         <h2 class="subtitle has-text-weight-light is-size-3 has-text-grey-dark">

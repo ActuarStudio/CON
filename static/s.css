@@ -14,6 +14,18 @@ footer {
 	font-family: 'Neo Sans Pro'
 }
 
+iframe{
+    flex-grow: 1;
+    background-color: transparent;
+    border: 0px none transparent;
+    padding: 0px;
+    overflow: hidden;
+    height: 100vh;
+	width: 100%;
+
+}
+
+
 .navbar-item:hover {
   background-color: white !important;
   color: hsl(348, 86%, 43%) !important;
