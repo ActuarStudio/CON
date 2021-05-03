@@ -4,10 +4,13 @@ import pandas as pd
 import interface_util as iu
 import os
 
+
+
 iu.set_conf()
 iu.localCSS("static/bulma.css")
 iu.localCSS("static/st.css")
 iu.set_HeroSection()
+
 
 padding = 0
 st.markdown(f""" <style>
