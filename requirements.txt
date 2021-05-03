@@ -95,9 +95,9 @@ six==1.15.0
 smart-open==4.2.0
 smmap==3.0.5
 soupsieve==2.2
-streamlit==0.78.0
-streamlit-aggrid==0.1.9
-streamlit-theme==0.58.0
+streamlit
+streamlit-aggrid
+streamlit-theme
 terminado==0.9.2
 testpath==0.4.4
 toml==0.10.2

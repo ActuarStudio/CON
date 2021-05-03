@@ -9,13 +9,14 @@ from io import BytesIO
 
 #################################
 
+
 def load_image(path):
     return base64.b64encode(Path(str(os.getcwd()) + "/" + path).read_bytes()).decode()
 
 def set_conf():
 
     page_title ="ActuarOnline"
-    page_icon  =load_image("static/LOGO.png")
+    page_icon  =load_image("static/2.png")
 
     st.set_page_config(
         page_title=page_title,
@@ -29,7 +30,7 @@ def localCSS(file_name):
 
 def set_HeroSection():
 
-    image = load_image("static/colorful-paint-splashes_1035-7496.jpg")
+    image = load_image("static/2.png")
     logo = load_image("static/logo4_1-46.png")
 
     st.write(
