@@ -88,8 +88,6 @@ FR0_schema  = 'static/tfr0.xsd'
 NBU_schema  = 'static/nbu0.xsd'
 KOD11       = 'static/kod11.xlsx'
 
-Delta_precision = 1000
-
 class NBUXML_base:
 
     def __init__(self, reporting_period=None, edrpou=None):
